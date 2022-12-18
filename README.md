@@ -7,7 +7,7 @@ Built with:
 - CSS flexbox
 - Basic Javascript
 
-
+Live site(url): https://stopwatch-ridwan.netlify.app/
 
 Screenshots:
 
