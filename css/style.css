@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-primary: rgb(0, 29, 31);
+  --color-body-bg: rgb(1, 24, 21);
+  --color-text: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--color-body-bg);
+}
+
+/* timer */
+.container {
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+  padding: 5rem 2.5rem 3rem;
+  border-radius: 10px;
+  background: var(--color-primary);
+  box-shadow: 0 0 30px rgb(0, 3, 3);
+}
+
+.timer__container {
+  font-size: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: rgb(0, 41, 43);
+  box-shadow: 0 0 30px rgb(0, 15, 15);
+}
+
+/* btn */
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--color-text);
+  font-weight: 500;
+  margin: 1rem 0;
+  transition: background 0.2s;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgb(0, 15, 20);
+}
+
+.btn:hover {
+  background: rgb(201, 115, 3);
+}
+
+.start__btn {
+  background: rgb(1, 43, 70);
+}
+
+.stop__btn {
+  background: rgb(122, 20, 20);
+}
+
+.reset__btn {
+  background: rgb(0, 90, 75);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 550px;
+  }
+
+  .timer__container {
+    font-size: 5rem;
+  }
+}
